@@ -7,6 +7,7 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Jaira">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" />
     <title>About me page</title>
     <style>
         /*Place holder*/
@@ -18,15 +19,30 @@
         <div class="navigationBar>">
             <nav>
                 <ul>
-                    <li><a href="index.html">About Me</a></li> <!--ADD URL-->
+                    <li><a href="index.html">About Me</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
                 </ul>
             </nav>
+
+            <search>
+                <form>
+                    <label for="search-site">Search my site:</label>
+                    <input type="search" id="search-site">
+                    <button type="submit">Search</button>
+                </form>
+            </search>
         </div>
     </header>
     <main>
+        <section class="audioFile">
+            <audio controls>
+                <source src="images/for-her-chill-upbeat-summel-travel-vlog-and-ig-music-royalty-free-use-202298.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+
         <section class="aboutMe">
             <h2>Hi! My name is Jaira Caylao</h2>
             <h3>UX/UI Designer & Developer</h3>
@@ -35,15 +51,18 @@
             </figure>
             <hgroup>
                 <h2>About Me</h2>
-                <p>I specialize in creating user-friendly websites and apps. With a major in Cognitive Science focusing
-                    on Design & Interaction and a minor in Computer Science, I have developed a strong foundation in design
-                    principles and coding. In my free time I like to crochet and play games.</p>
+                <p>I specialize in creating <strong>user-friendly websites and apps</strong>. With a major in
+                    <em><abbr title="Cognitive Science">CogSci</abbr> focusing on Design & Interaction</em> and a minor
+                    in <em><abbr title="Computer Science">CompSci</abbr></em>, I have developed a strong foundation in
+                    design principles and coding. My favorite thing to do in my free time is to crochet while
+                    binge-watching my current favorite shows and play games.</p>
             </hgroup>
         </section>
+
         &nbsp;<br> <!--line spacing-->
         <blockquote>
-            “User-centered design means understanding what your users need, how they think, and how they behave –
-            and incorporating that understanding into every aspect of your process."
+            <i>“User-centered design means understanding what your users need, how they think, and how they behave –
+            and incorporating that understanding into every aspect of your process."</i>
         </blockquote>
         <cite>– Jesse James Garrett, User experience designer</cite>
     </main>
