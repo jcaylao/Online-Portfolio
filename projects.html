@@ -7,33 +7,45 @@
     <meta name="keywords" content="HTML">
     <meta name="author" content="Jaira">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaira's Online Portfolio</title>
+    <title>Projects page</title>
+    <style>
+        /*Place holder*/
+    </style>
 </head>
 
 <body>
     <main>
-        <section id="projectsPage">
-            <h1>Projects</h1>
-            <table>
-                <caption>My Projects</caption>
-                <tr>
-                    <th>Preview</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="images/GROCERY-APP.png" alt="GROCERY-APP" width="300" height="200">
-                            <figcaption>Grocery and Cooking App</figcaption>
-                        </figure>
-                    </td>
-                    <td>
-                        Designed a grocery and cooking app that allows users to easily find new recipes and keep track
-                        of their groceries.
-                    </td>
-                </tr>
-            </table>
-        </section>
+        <table>
+            <colgroup>
+                <col span="3" style="background-color:lightblue">
+            </colgroup>
+            <caption><h1>Projects</h1></caption>
+            <tr>
+                <th>Preview</th>
+                <th>Video Demo</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>
+                    <figure>
+                        <img src="images/GROCERY-APP.png" alt="GROCERY-APP" width="300" height="200">
+                        <figcaption>Grocery and Cooking App</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <section class="video">
+                        <video controls height="200" width="350">
+                            <source src="images/GroceryAppDemo.mp4" type="video/mp4">
+                            <div class="error">Your browser does not support the video tag.</div>
+                        </video>
+                    </section>
+                </td>
+                <td>
+                    Designed a grocery and cooking app that allows users to easily find new recipes and keep track
+                    of their groceries.
+                </td>
+            </tr>
+        </table>
     </main>
 
     <script>
