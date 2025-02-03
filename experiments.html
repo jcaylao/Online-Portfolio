@@ -16,6 +16,15 @@
 
 <body>
     <header>
+        <section id="exp-dialog">
+            <dialog open>
+                <h2>Warning!</h2>
+                <p>This page is under construction. This is an experimental page.</p>
+                <p>This close button is currently not working. The <code>close()</code> method is not currently implemented</p>
+                <button onclick="close()">Close</button>
+            </dialog>
+        </section>
+
         <h1>Jaira's Online Portfolio</h1>
         <div class="navigationBar>">
             <nav>
@@ -31,14 +40,6 @@
     </header><hr>
 
     <main>
-        <section id="exp-dialog">
-            <dialog open>
-                <h2>Warning!</h2>
-                <p>This page is under construction. This is an experimental page.</p>
-                <p>This close button is currently not working. The <code>close()</code> method is not currently implemented</p>
-                <button onclick="close()">Close</button>
-            </dialog>
-        </section>
 
                 <pre>
 Here I will          ,╱|、
@@ -46,19 +47,20 @@ be displaying       (˚ˎ 。7
 a list of            |、˜〵
 experimental tags    じしˍ,)ノ
         </pre>
-        <p>
-            If images are not displaying correctly, please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
-            to refresh the page.
-        </p><hr>
+        <p>If images are not displaying correctly, please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>to
+            refresh the page.</p><hr>
 
         <section id="exp-ins-del">
+            <h3>Testing ins & del tags</h3>
             <p>Some of my current favorite shows are Modern Family, <del>Desperate Housewives</del> <ins
-               datetime="2025-02">Single's Inferno</ins> , and Love Island.</p>
+               datetime="2025-02-03">Single's Inferno</ins> , and Love Island.</p>
         </section>
 
-        <section>
-
+        <section id="exp-iframe">
+            <h2>Github to my online portfolio</h2>
+            <iframe src="https://github.com/jcaylao/Online-Portfolio" width="300" height="300"></iframe>
         </section>
+
     </main>
 </body>
 </html>
