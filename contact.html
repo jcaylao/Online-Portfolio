@@ -33,14 +33,32 @@
             </dd>
         </dl>
 
-        <form action="https://formspree.io/f/myzkjpal" method="POST">
-            <fieldset>
-                <label>Name:<input type="text" id="name" name="name"></label><br>
-                <label>Email:<input type="email" id="email" name="email"></label><br>
-                <label>Message:<textarea id="message" name="message"></textarea></label><br>
-            </fieldset>
-            <button type="submit">Send</button>
+        <form>
+            <label for="socialSelect">How did you hear about me?</label>
+            <select id="socialSelect">
+                <option value="">--Please choose an option--</option>
+                <optgroup label="Social Media">
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="instagram">Instagram</option>
+                </optgroup>
+                <optgroup label="Other">
+                    <option value="friend">Friend</option>
+                    <option value=advertisement>Advertisement</option>
+                    <option value="other">Other</option>
+                </optgroup>
+            </select><br>
+
+            <label for="contact-method">Preferred Contact Method: </label>
+            <input list="contact-options" id="contact-method" name="contact-method" placeholder="Choose or type...">
+            <datalist id="contact-options">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="linkedin">LinkedIn</option>
+            </datalist><br>
+            <button type="submit">Submit</button>
         </form>
+
     </main>
 
     <noscript>Javascript is disabled, some features may not work properly.</noscript>
