@@ -13,24 +13,26 @@
         /*Place holder*/
     </style>
 </head>
+
 <body>
     <header>
         <h1>Jaira's Online Portfolio</h1>
+        <search>
+            <form action="./search/">
+                <label for="search-site">Search my site:</label>
+                <input type="search" id="search-site" name="q">
+                <button type="submit">Search</button>
+            </form>
+        </search>
 
         <div class="navigationBar>">
             <nav>
-                <search>
-                    <form>
-                        <label for="search-site">Search my site:</label>
-                        <input id="search-site" name="q" type="search">
-                        <button type="submit">Search</button>
-                    </form>
-                </search>
                 <ul>
                     <li><a href="index.html">About Me</a></li>
                     <li><a href="skills.html">Skills</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="experiments.html">Experiments</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,10 +56,10 @@
                 <h2>About Me</h2>
                 <p>a short description about me...</p>
             </hgroup>
-            <p>I specialize in creating <strong>user-friendly websites and apps</strong>. With a major in
-                <em><abbr title="Cognitive Science">CogSci</abbr> focusing on Design & Interaction</em> and a minor
-                in <em><abbr title="Computer Science">CompSci</abbr></em>, I have developed a strong foundation in
-                design principles and coding.
+            <p>I specialize in creating <dfn>user-friendly</dfn> websites and apps, as they are easy to use and navigate
+                in order to meet user needs. With a major in <em><abbr title="Cognitive Science">CogSci</abbr> focusing
+                on Design & Interaction</em> and a minor in <em><abbr title="Computer Science">CompSci</abbr></em>, I
+                have developed a strong foundation in <strong>design principles and coding.</strong>
             </p>
             <aside>
                 Some of my hobbies include:
@@ -87,6 +89,7 @@
         </address>
     </footer>
 
+    <noscript>Javascript is disabled, some features may not work properly.</noscript>
     <script>
         // Placeholder for JavaScript
     </script>
