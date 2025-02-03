@@ -61,8 +61,32 @@ experimental tags    じしˍ,)ノ
             <iframe src="https://jaira-portfolio.netlify.app/" width="500" height="300"></iframe>
         </section>
 
-        <section id="exp-canvas-svg-template">
+        <section id="exp-svg">
+            <h3>Silly attempt at a heart with svg</h3>
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <path d="M50 80
+                     C 20 50, 5 20, 30 10
+                     C 50 0, 70 10, 70 30
+                     C 70 10, 90 0, 100 30
+                     C 100 50, 80 80, 50 80
+                     Z"
+                      fill="red" stroke="black" stroke-width="2"/>
+                <text x="50" y ="50" font-size="20" fill="white">Hi</text>
+            </svg>
+        </section>
 
+        <section id="exp-canvas">
+            <h3>Experimenting with canvas tag</h3>
+            <canvas id="my-canvas" width="100" height="100" style="border:1px solid #000000;"></canvas>
+            <p>This is only a placeholder because I am currently unable to use JavaScript.</p>
+        </section>
+
+        <section id="exp-template">
+            <h3>Experimenting with template tag</h3>
+            <template id="hidden-message">
+                <h2>Here is a hidden message!</h2>
+                <p>This a hidden message because I am unable to use JavaScript.</p>
+            </template>
         </section>
 
     </main>
